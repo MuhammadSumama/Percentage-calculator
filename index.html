@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="flex">
+    <h1><i>Percentage Calculator</i></h1>
+<form onsubmit="calculate();return false; "> 
+
+    <label for="totalMarks">Total Marks:</label>
+    <input type="number" min="1" required id="totalMarks"  placeholder="Enter your totalMarks">
+<br>
+<br>
+    <label for="marksObtained">obtainedMarks:</label>   
+    <input type="number" min="" required id="marksObtained"  placeholder="Enter your obtainedMarks">
+<br>
+<br>
+    <button type="submit" >Calculate</button>
+
+
+</form>
+
+<h1 id="result"></h1>
+</div>
+<script>
+// let calculate = (e) => {
+//     e.preventDefault();
+// let totalMarks=document.querySelector("#totalMarks").value;
+// let marksObtained=document.querySelector("#marksObtained").value;
+
+// let result =marksObtained *100/totalMarks;
+
+// alert(result + "%");
+// }
+
+
+function calculate(){
+let totalMarks=document.querySelector("#totalMarks").value;
+let marksObtained=document.querySelector("#marksObtained").value;
+
+let result =marksObtained *100/totalMarks;
+
+document.querySelector("#result").innerHTML ='your percentage is' + result+"%";
+
+// alert(result + "%");
+}
+
+</script>
+</body>
+</html>
