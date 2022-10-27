@@ -44,7 +44,8 @@ let marksObtained=document.querySelector("#marksObtained").value;
 
 let result =marksObtained *100/totalMarks;
 
-document.querySelector("#result").innerHTML ='your percentage is' + result+"%";
+// document.querySelector("#result").innerHTML ='your percentage is' + result+"%";
+document.querySelector("#result").innerHTML =`Your percentage is <h1><i>${result}%</i></h1>`;
 
 // alert(result + "%");
 }
