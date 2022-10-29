@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="flex">
-    <h1><i>Percentage Calculator</i></h1>
+    <h1 class="main"><i>Percentage Calculator</i></h1>
 <form onsubmit="calculate();return false; "> 
-
+<div class="one">
     <label for="totalMarks">Total Marks:</label>
     <input type="number" min="1" required id="totalMarks"  placeholder="Enter your totalMarks">
 <br>
 <br>
+</div>
+<div class="two">
     <label for="marksObtained">obtainedMarks:</label>   
     <input type="number" min="" required id="marksObtained"  placeholder="Enter your obtainedMarks">
 <br>
 <br>
-    <button type="submit" >Calculate</button>
+</div>
+    <button class="but" type="submit" >Calculate</button>
 
 
 </form>
